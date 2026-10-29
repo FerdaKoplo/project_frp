@@ -1,0 +1,12 @@
+node_modules
+.svelte-kit
+dist
+build
+.git
+.github
+turbo.json
+journals
+.venv
+__pycache__
+*.log
+.DS_Store

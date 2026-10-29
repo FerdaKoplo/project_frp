@@ -1,0 +1,95 @@
+# Pipeline State — State Tracker v2.0 (single source of truth)
+
+topic: "Resource Planning in Federal Systems: Mechanisms, Trade-offs, and Failure Modes"
+language: en
+pipeline_version: "3.13.0"
+entry_point: 1
+current_stage: "1"
+pipeline_state: "in_progress"
+consecutive_continue_count: 0
+corpus_root: /Users/ivan/projects/researches/project_frp/journals
+vault_root: /Users/ivan/Documents/Federal Resources Planning/Federation Research
+workdir: /Users/ivan/Documents/Federal Resources Planning/Federation Research/.ars-pipeline
+
+user_choices:
+  stage1_mode: full
+  stage2_mode: full
+  stage3_mode: full
+  language: English
+  scope: "Resources Planning core (5 of 12 vault notes)"
+  arbitration: "pause_and_ask"
+
+round_trip_caps:
+  revision_loops_max: 2   # Stage 4 + Stage 4'
+  socratic_coaching_max: 8  # Stage 3->4
+  socratic_coaching_max_2: 5 # Stage 3'->4'
+  integrity_fix_loops_max: 3 # Stages 2.5 / 4.5
+  worst_case_total: 18
+
+stages:
+  "1":
+    name: RESEARCH
+    skill: deep-research
+    status: completed
+    mode: full
+    outputs: ["corpus_profile.md (41 sources, quote bank, gap analysis)", "rq brief.md (v2, archipelagic pivot)", "methodology blueprint.md", "12 vault notes drafted in Federation Research/", "004.pdf recovered from encryption (Ekonomiaz 2009)", "DECENTRALIZATION EXTENSION: decentralizaiton/ corpus (18 readable PDFs -> /tmp/dectxt/), definitional extraction -> refined What is Federation.md decentralization section (Rondinelli 4-type typology, Blume & Voigt 2008 constitutional cut, Faguet 2021 critique, Smoke 2001 measurement critique, CeFiMS 4 pillars)", "ALGORITHM EXTENSION: algorithm/ corpus (42 PDFs -> /tmp/algotxt/), algorithm corpus profile (42-file inventory, 80 verbatim quotes, 16-topic coverage), 17 vault notes filled in Model Research/ (16 stubs + added Network Flow Algorithms.md)"]
+    started_at: "2026-10-28"
+    completed_at: "2026-10-28"
+    checkpoint_confirmed: false
+    checkpoint_type: FULL
+    schema_validated: true
+    dialogue_log_ref: "turns #1..#current"
+  "2":
+    name: WRITE
+    skill: academic-paper
+    status: pending
+    mode: full
+    outputs: []
+  "2.5":
+    name: INTEGRITY
+    agent: integrity_verification_agent
+    status: pending
+    mode: pre-review
+    retry_count: 0
+  "3":
+    name: REVIEW
+    skill: academic-paper-reviewer
+    status: pending
+    mode: full
+  "4":
+    name: REVISE
+    skill: academic-paper
+    status: pending
+    mode: revision
+  "3'":
+    name: RE-REVIEW
+    skill: academic-paper-reviewer
+    status: pending
+    mode: re-review
+  "4'":
+    name: RE-REVISE
+    skill: academic-paper
+    status: pending
+    mode: revision
+  "4.5":
+    name: FINAL_INTEGRITY
+    agent: integrity_verification_agent
+    status: pending
+    mode: final-check
+    retry_count: 0
+  "5":
+    name: FINALIZE
+    skill: academic-paper
+    status: pending
+    mode: format-convert
+  "6":
+    name: PROCESS_SUMMARY
+    skill: orchestrator
+    status: pending
+    mode: auto
+
+audit_log:
+  - 2026-10-28T00:00Z | pipeline_orchestrator | intake | Entry: Stage 1. Materials: 12 vault notes (11 empty skeletons + 1 filled "What is Federation.md"), 41 PDFs in journals corpus (40 extracted to /tmp/fedtxt/, 1 encrypted). Mode: full/full/full. Scope: Resources Planning core.
+  - 2026-10-28T19:20Z | deep-research | stage1_complete | 12/12 Federation Research notes filled (69,676 bytes). RQ pivoted to archipelagic-federalism optimization.
+  - 2026-10-29T00:00Z | deep-research | stage1_extension_decentralization | User request: refine decentralization definitions. decentralizaiton/ corpus extracted (18/19 readable; wp97155.pdf = whitespace, dead end). 18-source definitional report at /tmp/dectxt/decentralization_definitions.md. What is Federation.md rewritten 4.1KB -> 12.9KB.
+  - 2026-10-29T02:30Z | deep-research | stage1_extension_algorithm | User request: fill Model Research vault from algorithm/ corpus. 42 PDFs extracted to /tmp/algotxt/ (0 failures). Corpus profile: 42-file inventory, 80 verbatim quotes with locators, 16-topic coverage matrix. 17 notes written to Model Research/ (16 stubs + new Network Flow Algorithms.md for the corpus's strongest topic) = 119,720 bytes. 3 topics corpus-ABSENT (NetworkX, Go, Svelte) - notes written with explicit external-verification flags. LSP undefined in corpus - disambiguation note written (LSCP = nearest real acronym).
