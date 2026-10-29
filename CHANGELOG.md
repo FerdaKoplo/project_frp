@@ -1,3 +1,4 @@
+2026-10-29 21:03 - commit 4a1d6c0 - chore: move CHANGELOG.md to repo root for visibility
 2026-10-29 20:46 - commit b25a656 - demo: prove post-commit hook fires
 2026-10-29 20:43 - commit a3052b6 - add : obsidian vault, app structures, docker scripts
 2026-10-29 20:35 - commit d4bc2b0 - chore: tracked hooks setup script
