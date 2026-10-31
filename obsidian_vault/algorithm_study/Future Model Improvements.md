@@ -14,7 +14,7 @@
 
 ## Gap 2: LSP is undefined here
 
-The only "LSP" in the corpus is a **Lunar South Pole node label** (Ishimatsu et al. 2013). The note ([[What is LSP, Why is That Matter]]) disambiguates toward **LSCP (Location Set Covering Problem)** on one-letter proximity and topical fit, with "Large-Scale (Linear) Programming" as second reading. **External verification required** before the paper commits to either.
+The only "LSP" in the corpus is a **Lunar South Pole node label** (Ishimatsu et al. 2013). The note ([[What is LP, Why is That Matter]]) disambiguates toward **LSCP (Location Set Covering Problem)** on one-letter proximity and topical fit, with "Large-Scale (Linear) Programming" as second reading. **External verification required** before the paper commits to either.
 
 ## Gap 3: No fiscal-federalism application of OR in the corpus
 

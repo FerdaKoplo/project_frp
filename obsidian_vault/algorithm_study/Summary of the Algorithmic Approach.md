@@ -2,13 +2,13 @@
 
 > Source basis: synthesis across the 15 sibling notes, all anchored in the 42-file algorithm corpus (profile: `.ars-pipeline` corpus profile; extraction cache `/tmp/algotxt/`). See [[What is Operations Research]] for discipline framing.
 
-**The question this vault half answers:** given the archipelagic-federal problem in [[Federation Research/Summary]] — a fixed transfer pool, heterogeneous island need, and a political demand for transparency — *what is the algorithm?*
+**The question this vault half answers:** given the archipelagic-federal problem in [[Summary]] , a fixed transfer pool, heterogeneous island need, and a political demand for transparency — *what is the algorithm?*
 
 **Answer in one paragraph.** The problem splits in two, and each half gets a different method. The **transfer computation itself is small and linear**: a five-operation vector formula over published per-province indices, solvable as an LP in milliseconds, implementable in any language, and duplicable by any citizen — which is exactly the replicability standard the fiscal-federalism literature demands. The **facility-and-assignment layer is combinatorial and NP-hard**: which islands get facilities, which islands are served from where — a capacitated p-median / covering MILP, attacked with good formulations, soft-constraint penalties, and, where exact solve fails, genetic algorithms. The two layers are joined by a **cost-of-provision index** that carries archipelagic geography (dispersion, connectivity, climate exposure) into both. Politics sets the objective and the hard constraints; ML estimates the indices; OR computes the allocation.
 
 ## The model, stated completely
 
-From [[Federation Research/Translating Political Constraints to Algorithmic Rules]] and [[Modeling Federal Constraints & Penalties]]:
+From [[federation_study/Translating Political Constraints to Algorithmic Rules]] and [[Modeling Federal Constraints & Penalties]]:
 
 ```
 LAYER 1 — TRANSFER FORMULA (LP; deterministic; legislable)
@@ -76,7 +76,7 @@ OUTPUT LAYER  JSON contract (allocations, frontier, coverage, provenance)
 ## Honest limits (carried into [[Future Model Improvements]])
 
 - **Three corpus-ABSENT topics**: NetworkX, Go, Svelte — implemented only with external, unverified knowledge; none is load-bearing in the paper's argument.
-- **LSP is undefined in the corpus** — disambiguated toward LSCP in [[What is LSP, Why is That Matter]]; needs external confirmation.
+- **LSP is undefined in the corpus** — disambiguated toward LSCP in [[What is LP, Why is That Matter]]; needs external confirmation.
 - **No corpus source models fiscal-federalism design as such** — the federal translation is this vault's synthesis from penalty/constraint analogues; the Federation Research half supplies the political rules.
 - **Synthetic instances test mechanism, not magnitudes** — no empirical validation of the cost-of-provision index yet (Federation Research Gap 4).
 
@@ -86,7 +86,7 @@ OUTPUT LAYER  JSON contract (allocations, frontier, coverage, provenance)
 **Method:** [[Algorithmic Bottlenecks and NP-Hard Problems]] · [[Modeling Federal Constraints & Penalties]] · [[Heuristics and Genetic Algorithms]]
 **Application:** [[Spatial and Location-Allocation Models]] · [[Resource Allocation with PuLP]] · [[Vector Math with NumPy]] · [[Synthetic Data Generation]]
 **Integration:** [[Operations Research vs Machine Learning]] · [[Graph Modeling with NetworkX]] · [[Go Integration Strategy]] · [[Svelte Visualization Data Contract]]
-**Unresolved:** [[What is LSP, Why is That Matter]] · [[Future Model Improvements]]
+**Unresolved:** [[What is LP, Why is That Matter]] · [[Future Model Improvements]]
 
 ## Related notes
 - [[Federation Research/Summary]] — the policy half this vault formalizes

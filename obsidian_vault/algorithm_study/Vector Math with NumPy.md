@@ -1,9 +1,9 @@
-
-> **Status: corpus-WEAK topic.** NumPy appears in exactly one corpus file — Bearman et al. (2023), listed in the Python stack. Vector *mathematics* is pervasive (transposes, gradients, inner products) but always on paper, never as NumPy code. This note documents the corpus's vector math and marks NumPy implementation as **external knowledge requiring verification**.
+# Vector Math with NumPy
+>  Bearman et al. (2023), listed in the Python stack. Vector *mathematics* is pervasive (transposes, gradients, inner products) but always on paper, never as NumPy code. This note documents the corpus's vector math and marks NumPy implementation as **external knowledge requiring verification**.
 
 ## The corpus's only NumPy mention
 
-**Bearman et al. (2023)** — the p-median spopt case study:
+**Bearman et al. (2023)** : the p-median spopt case study:
 
 > "The work is currently being undertaken in Python, making use of the pandas, geopandas, NumPy, gurobipy, spopt, filelock, pyarrow, pyrate-limiter, and requests libraries."
 
@@ -17,13 +17,13 @@ Every formulation in this vault is vector algebra written down. Four examples:
 
 > "Linear Programming deals with the problem of optimizing a linear objective function subject to linear equality and inequality constraints on the decision variables."
 
-And in canonical form: "Max z = c^T x subject to (P) Ax <= b, x >= 0" — a vector `x` of decisions, matrix `A` of constraint coefficients, vectors `b`/`c` of limits and prices. `c^T x` is the inner product that turns the decision vector into a scalar cost. **In NumPy this is `c @ x` — one operation, and the whole objective is evaluated.**
+And in canonical form: "Max z = c^T x subject to (P) Ax <= b, x >= 0" — a vector `x` of decisions, matrix `A` of constraint coefficients, vectors `b`/`c` of limits and prices. `c^T x` is the inner product that turns the decision vector into a scalar cost. **In NumPy this is `c @ x` : one operation, and the whole objective is evaluated.**
 
 **2. The dual LP** — Goemans again:
 
 > "Given a linear program (P) in canonical form Max z = c^T x subject to (P) Ax <= b, x >= 0 we define its dual linear program (D) as Min w = b^T y subject to (D) A^T y >= c, y >= 0."
 
-The dual vector `y` is the vector of **shadow prices** — the multiplier on each constraint. In federal terms (Trdlička & Hanzálek's dual decomposition), `y` is precisely what the centre broadcasts to provinces so they can optimize locally: **the vector structure of fiscal coordination.** See [[Network Flow Algorithms]].
+The dual vector `y` is the vector of **shadow prices** : the multiplier on each constraint. In federal terms (Trdlička & Hanzálek's dual decomposition), `y` is precisely what the centre broadcasts to provinces so they can optimize locally: **the vector structure of fiscal coordination.** See [[Network Flow Algorithms]].
 
 **3. The MILP standard form** — Ling, Wang & Wang (AAAI-24):
 

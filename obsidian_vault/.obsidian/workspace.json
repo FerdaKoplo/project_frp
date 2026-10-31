@@ -13,68 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Federation Research/What is Federation.md",
+                "file": "algorithm_study/Summary of the Algorithmic Approach.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "What is Federation"
-            }
-          },
-          {
-            "id": "e90035467fa66358",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Federation Research/What is Federation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "What is Federation"
-            }
-          },
-          {
-            "id": "53397410593346b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Model Research/Vector Math with NumPy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Vector Math with NumPy"
-            }
-          },
-          {
-            "id": "894102ee1727b099",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Journals/decentralizaiton/M404_unit-01_sample.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "M404_unit-01_sample"
+              "title": "Summary of the Algorithmic Approach"
             }
           },
           {
             "id": "5e0eac5dc1458e33",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Journals/decentralizaiton/multi-page.pdf"
+                "file": "algorithm_study/Algorithmic Bottlenecks and NP-Hard Problems.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "multi-page"
+              "icon": "lucide-file",
+              "title": "Algorithmic Bottlenecks and NP-Hard Problems"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,8 +187,8 @@
             "state": {
               "type": "opencode-terminal",
               "state": {},
-              "icon": "terminal",
-              "title": "Opencode"
+              "icon": "lucide-ghost",
+              "title": "opencode-terminal"
             }
           }
         ],
@@ -246,39 +207,38 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "opencode:Opencode terminal": false,
-      "opencode:Opencode conversations": false
+      "bases:Create new base": false
     }
   },
-  "active": "53397410593346b0",
+  "active": "ed5c264606ca70df",
   "lastOpenFiles": [
+    "algorithm_study/Spatial and Location-Allocation Models.md",
+    "algorithm_study/Summary of the Algorithmic Approach.md",
+    "algorithm_study/Svelte Visualization Data Contract.md",
+    "algorithm_study/Synthetic Data Generation.md",
+    "Federation Research/Future Improvement.md",
+    "Federation Research",
+    "algorithm_study/Vector Math with NumPy.md",
+    "algorithm_study/What is LP, Why is That Matter.md",
+    "algorithm_study/What is Operations Research.md",
+    "algorithm_study/Algorithmic Bottlenecks and NP-Hard Problems.md",
+    "federation_study/What is Resources Planning.md",
+    "Federation Research/What is Resources Planning.md",
+    "Federation Research/Translating Political Constraints to Algorithmic Rules.md",
+    "federation_study/What is Federation.md",
+    "federation_study/Chance of Economic Development With Federation Resources Planning.md",
+    "federation_study/Summary.md",
+    "federation_study/Systemic Risks & Failure Modes in Developing Federations.md",
+    "federation_study/Tradeoff With The Federation Resources Planning.md",
+    "federation_study/Translating Political Constraints to Algorithmic Rules.md",
+    "resources_planning_federal_system.md",
+    "federation_study/Mechanisms of Federal Resource Distribution.md",
+    "federation_study/How Federation Resources Planning Affected Archipelagos Nation.md",
     "Model Research/What is LSP, Why is That Matter.md",
     "Model Research/Resource Allocation with PuLP.md",
     "Model Research/Network Flow Algorithms.md",
     "Model Research/Operations Research vs Machine Learning.md",
     "Model Research/What is Operations Research.md",
-    "Model Research/Vector Math with NumPy.md",
-    "Model Research/Algorithmic Bottlenecks and NP-Hard Problems.md",
-    "Model Research/Future Model Improvements.md",
-    "Model Research/Go Integration Strategy.md",
-    "Model Research/Heuristics and Genetic Algorithms.md",
-    "Model Research/Modeling Federal Constraints & Penalties.md",
-    "Model Research/Graph Modeling with NetworkX.md",
-    "Model Research/Spatial and Location-Allocation Models.md",
-    "Federation Research/Translating Political Constraints to Algorithmic Rules.md",
-    "Federation Research/What is Resources Planning.md",
-    "Resources Planning System Federal System.md",
-    "Federation Research/What is Federation.md",
-    "Federation Research/Chance of Economic Development With Federation Resources Planning.md",
-    "Federation Research/Future Improvement.md",
-    "Federation Research/How Federation Resources Planning Affected Archipelagos Nation.md",
-    "Federation Research/How Geographical Problems Pushed For Federation.md",
-    "Federation Research/Introduction.md",
-    "Federation Research/Summary.md",
-    "Federation Research/Systemic Risks & Failure Modes in Developing Federations.md",
-    "Federation Research/Tradeoff With The Federation Resources Planning.md",
-    "Federation Research/Mechanisms of Federal Resource Distribution.md",
     "Journals/decentralizaiton/Rethinking-Decentralization-in-Developing-Countries.pdf",
     "Journals/decentralizaiton/multi-page.pdf",
     "Journals/federation/641503.pdf",
@@ -287,7 +247,6 @@
     "Journals/decentralizaiton/multi0page.pdf",
     "Journals/decentralizaiton/multi0page (1).pdf",
     "Journals/decentralizaiton/9789264302488-en.pdf",
-    "Journals/decentralizaiton/ALLGEMEIN-Lit-1999-Oates-An-Essay-on-Fiscal-Federalism.pdf",
-    "Journals/decentralizaiton/Democr_Decen.pdf"
+    "Journals/decentralizaiton/ALLGEMEIN-Lit-1999-Oates-An-Essay-on-Fiscal-Federalism.pdf"
   ]
 }

@@ -98,7 +98,7 @@ The technique is **dual decomposition** — the centre broadcasts dual variables
 | Money between tiers | min-cost flow with penalties | this note + [[Modeling Federal Constraints & Penalties]] |
 | Goods/services across islands | multi-commodity flow | this note |
 | Facility siting | p-median / covering | [[Spatial and Location-Allocation Models]] |
-| Fairness hard constraint | LSCP (all covered) | [[What is LSP, Why is That Matter]] |
+| Fairness hard constraint | LSCP (all covered) | [[What is LP, Why is That Matter]] |
 
 ## Related notes
 - [[Algorithmic Bottlenecks and NP-Hard Problems]] — the complexity classes above
